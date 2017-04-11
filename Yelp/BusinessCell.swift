@@ -16,7 +16,7 @@ class BusinessCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
     @IBOutlet weak var reviewCountLabel: UILabel!
-    
+
     var business : Business! {
         didSet {
             nameLabel.text = business.name
@@ -35,11 +35,4 @@ class BusinessCell: UITableViewCell {
         thumbImageView.clipsToBounds = true
         thumbImageView.layer.cornerRadius = 3
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
